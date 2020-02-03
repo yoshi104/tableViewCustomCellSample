@@ -31,15 +31,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 10
+        return 15
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
         cell.update(updateCell: indexPath)
         
+//        if indexPath.row == 1 {
+//            cell.backgroundColor = UIColor.blue
+//        }
+//        else {
+//            cell.backgroundColor = UIColor.white
+//        }
+        
         return cell
     }
-
 }
 

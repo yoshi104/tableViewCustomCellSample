@@ -19,4 +19,7 @@ class CustomCell: UITableViewCell {
         self.title.text = "Love Coffee Life"
     }
     
+    override func prepareForReuse() {
+        backgroundColor = UIColor.white
+    }
 }
